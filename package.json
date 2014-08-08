@@ -1,6 +1,6 @@
 {
   "name": "nodebeginner",
-  "version": "0.1.0",
+  "version": "0.1.30",
   "description": "A sample Node.js app",
   "main": "index.js",
   "scripts": {
@@ -16,5 +16,11 @@
   "keywords": [
     "node",
     "heroku"
-  ]
+  ],
+  "bugs": {
+    "url": "https://github.com/govindbalki/nodebeginner/issues"
+  },
+  "homepage": "https://github.com/govindbalki/nodebeginner",
+  "author": "Govind",
+  "license": "ISC"
 }
