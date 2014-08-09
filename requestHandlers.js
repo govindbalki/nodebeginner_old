@@ -24,11 +24,22 @@ function start(response, postData){
 }
 
 function upload(response, postData){
-	console.log("Request handler 'upload' was called."); 
-	console.log(postData);
-	response.writeHead(200, {"Content-Type": "text/plain"}); 
-	response.write("You've sent: " + querystring.parse(postData).text);
-	response.end();
+	var returnText = querystring.parse(postData).text;
+
+	if (returnText=="Peter Archer"){
+		console.log("Request handler 'upload' was called."); 
+		console.log(postData);
+		response.writeHead(200, {"Content-Type": "text/plain"}); 
+		response.write("Hello Pete, did you have a good journey in");
+		response.end();
+	}
+	else{
+		console.log("Request handler 'upload' was called."); 
+		console.log(postData);
+		response.writeHead(200, {"Content-Type": "text/plain"}); 
+		response.write("You've sent: " + querystring.parse(postData).text);
+		response.end();
+	}
 }
 
 exports.start=start;
